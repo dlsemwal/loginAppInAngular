@@ -1,0 +1,13 @@
+<div class="container">
+  <ul>
+    <li *ngFor="let item of comments" class="overflow-hidden">
+      <div class="overflow-hidden my-3">
+        <img src={{item.url}} width="75" height="75" class="float-left overflow-hidden">
+        <div class="ml-3 float-left">
+            {{item.title | titlecase}}
+        </div>
+        {{item.title}}
+      </div>
+    </li>
+  </ul>
+</div>
