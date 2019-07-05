@@ -19,7 +19,6 @@ export class AuthService {
   }
 
   isAuthenticated(): boolean {
-    console.log('authenticated token', localStorage.getItem('token'));
     return localStorage.getItem('token') != null && !this.isTokenExpired();
 
   }
@@ -30,8 +29,7 @@ export class AuthService {
 
   login(loginData): void {
     this.http.post(`${config.baseUrl}/login`, loginData).subscribe((res: any) => {
-      localStorage.setItem('token', 'res.data.token');
-      console.log(res.data.token);
+      localStorage.setItem('token', res.data.token);
 
     })
       ;
