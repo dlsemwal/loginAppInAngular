@@ -5,6 +5,7 @@ import { map, tap } from 'rxjs/operators';
 import decode from 'jwt-decode';
 import { HttpClient } from '@angular/common/http';
 import { config } from '../config/config';
+import { LStorageService } from './l-storage.service';
 
 @Injectable({
   providedIn: 'root'
@@ -12,14 +13,14 @@ import { config } from '../config/config';
 export class AuthService {
   private message: string;
 
-  constructor(private router: Router, private http: HttpClient) { }
+  constructor(private router: Router, private http: HttpClient, private lStorage: LStorageService) { }
 
   clear(): void {
     localStorage.clear();
   }
 
   isAuthenticated(): boolean {
-    return localStorage.getItem('token') != null && !this.isTokenExpired();
+    return this.lStorage.getToken() != null && !this.isTokenExpired();
 
   }
 
@@ -29,12 +30,11 @@ export class AuthService {
 
   login(loginData): void {
     this.http.post(`${config.baseUrl}/login`, loginData).subscribe((res: any) => {
-      localStorage.setItem('token', res.data.token);
+      this.lStorage.setToken(res.data.token);
+      this.router.navigate(['/dashboard']);
+      this.lStorage.setUser(res.data.user.name);
+    });
 
-    })
-      ;
-
-    this.router.navigate(['/dashboard']);
   }
 
 

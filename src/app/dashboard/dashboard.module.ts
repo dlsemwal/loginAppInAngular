@@ -9,12 +9,14 @@ import { UserComponent } from './user/user.component';
 import { PicturesComponent } from './pictures/pictures.component';
 import { CommentsComponent } from './comments/comments.component';
 import { AboutComponent } from './about/about.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [HomeComponent, LayoutComponent, UserComponent, PicturesComponent, CommentsComponent, AboutComponent],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    FormsModule
   ],
   providers: [AuthGuard]
 })
