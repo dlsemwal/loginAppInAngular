@@ -11,13 +11,14 @@ import { UserComponent } from './user/user.component';
 const routes: Routes = [
   {
     path: '', component: LayoutComponent,
-    canActivate: [AuthGuard] ,
+    canActivate: [AuthGuard],
     children: [
-      { path: '', component: HomeComponent },
+      { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
       { path: 'comments', component: CommentsComponent },
       { path: 'pictures', component: PicturesComponent },
-      { path: 'user', component: UserComponent }
+      { path: 'user', component: UserComponent },
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
     ]
   }
 ];
