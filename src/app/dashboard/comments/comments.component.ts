@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonService } from '../../services/common.service';
 import { config } from '../../config/config';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-comments',
@@ -12,7 +13,7 @@ export class CommentsComponent implements OnInit {
   page: any;
   pages: number;
   currentPage: number;
-  constructor(private common: CommonService) {
+  constructor(private common: CommonService, private router: Router, private route: ActivatedRoute) {
     this.getComments();
   }
 
@@ -33,8 +34,14 @@ export class CommentsComponent implements OnInit {
   getPage(i) {
 
     if (i >= 1 && i <= this.pages) {
+
       this.page = this.comments.slice(10 * (i - 1), i * 10);
       this.currentPage = +i;
+      this.route.params.subscribe(page => {
+        if (page != i) {
+          this.router.navigate([`/dashboard/comments/${i}`]);
+        }
+      });
     }
 
   }
