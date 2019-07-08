@@ -2,11 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { CommonService } from './services/common.service';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { AuthService } from './services/auth.service';
-import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,9 +19,13 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
-  providers: [AuthService],
+  providers: [
+    AuthService, [
+      { provide: HTTP_INTERCEPTORS, useClass: CommonService, multi: true }
+    ],
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

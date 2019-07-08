@@ -10,9 +10,10 @@ import { PicturesComponent } from './pictures/pictures.component';
 import { CommentsComponent } from './comments/comments.component';
 import { AboutComponent } from './about/about.component';
 import { FormsModule } from '@angular/forms';
+import { AddItemsComponent } from './menu-items/add-items/add-items.component';
 
 @NgModule({
-  declarations: [HomeComponent, LayoutComponent, UserComponent, PicturesComponent, CommentsComponent, AboutComponent],
+  declarations: [HomeComponent, LayoutComponent, UserComponent, PicturesComponent, AddItemsComponent, CommentsComponent, AboutComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,

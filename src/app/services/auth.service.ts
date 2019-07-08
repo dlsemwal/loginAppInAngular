@@ -1,8 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { Observable, pipe, throwError } from 'rxjs';
-import { map, tap } from 'rxjs/operators';
-import decode from 'jwt-decode';
 import { HttpClient } from '@angular/common/http';
 import { config } from '../config/config';
 import { LStorageService } from './l-storage.service';
@@ -29,10 +26,11 @@ export class AuthService {
   }
 
   login(loginData): void {
-    this.http.post(`${config.baseUrl}/login`, loginData).subscribe((res: any) => {
-      this.lStorage.setToken(res.data.token);
+    this.http.post(config.loginUrl, loginData).subscribe((res: any) => {
+      console.log(config.loginUrl, res);
+      this.lStorage.setToken(res.id);
       this.router.navigate(['/dashboard']);
-      this.lStorage.setUser(res.data.user.name);
+      this.lStorage.setUser(res.user.full_name);
     });
 
   }

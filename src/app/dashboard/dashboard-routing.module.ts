@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { CommentsComponent } from './comments/comments.component';
 import { PicturesComponent } from './pictures/pictures.component';
 import { UserComponent } from './user/user.component';
+import { AddItemsComponent } from './menu-items/add-items/add-items.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,9 @@ const routes: Routes = [
       { path: 'comments/:page', component: CommentsComponent },
       { path: 'pictures/:page', component: PicturesComponent },
       { path: 'user', component: UserComponent },
+      { path: 'addItems', component: AddItemsComponent },
+      { path: 'menu-items', loadChildren: './menu-items/menu-items.module#MenuItemsModule' },
+
       { path: '', redirectTo: 'home', pathMatch: 'full' },
     ]
   }

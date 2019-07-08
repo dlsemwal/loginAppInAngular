@@ -38,6 +38,7 @@ export class CommentsComponent implements OnInit {
       this.page = this.comments.slice(10 * (i - 1), i * 10);
       this.currentPage = +i;
       this.route.params.subscribe(page => {
+        // tslint:disable-next-line:triple-equals
         if (page != i) {
           this.router.navigate([`/dashboard/comments/${i}`]);
         }

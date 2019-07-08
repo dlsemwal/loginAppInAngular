@@ -12,5 +12,7 @@ export class LayoutComponent implements OnInit {
   constructor(private authService: AuthService, private common: CommonService) { }
 
 
-  ngOnInit() {  }
+  ngOnInit() {
+
+  }
 }
