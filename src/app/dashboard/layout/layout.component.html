@@ -18,7 +18,12 @@
           <a class="nav-link" [routerLink]='["/dashboard", "about"]' [ngClass]='{"active" : common.active("/about")}'>About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]='["/dashboard", "menu-items"]' [ngClass]='{"active" : common.active("/about")}'>Menu Items</a>
+          <a class="nav-link" [routerLink]='["/dashboard", "menu-items"]' [ngClass]='{"active" : common.active("/menu-items")}'>Menu
+            Items</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]='["/dashboard", "shopping"]' [ngClass]='{"active" : common.active("/shopping")}'>
+            Shopping</a>
         </li>
         <li class="nav-item btn-block mt-5">
           <a class="nav-link logout text-white" (click)='authService.logout()'>Logout</a>

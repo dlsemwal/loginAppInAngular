@@ -21,7 +21,7 @@ const routes: Routes = [
       { path: 'user', component: UserComponent },
       { path: 'addItems', component: AddItemsComponent },
       { path: 'menu-items', loadChildren: './menu-items/menu-items.module#MenuItemsModule' },
-
+      { path: 'shopping', loadChildren: './shopping/shopping.module#ShoppingModule' },
       { path: '', redirectTo: 'home', pathMatch: 'full' },
     ]
   }

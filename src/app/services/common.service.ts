@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpInterceptor, HttpRequest, HttpHandler, HttpEvent } from '@angular/common/http';
+import { HttpClient, HttpInterceptor, HttpRequest, HttpHandler, HttpEvent, HttpResponse } from '@angular/common/http';
 import { config } from '../config/config';
 import { Observable } from 'rxjs';
 import { LStorageService } from './l-storage.service';
@@ -17,7 +17,7 @@ export class CommonService implements HttpInterceptor {
       // !req.url.includes(config.loginUrl)
       // tslint:disable-next-line:triple-equals
       req.url == config.loginUrl
-      ) {
+    ) {
       return next.handle(req);
     }
     const modified = req.clone({ setHeaders: { 'X-Access-Token': this.lStorage.getToken() } });

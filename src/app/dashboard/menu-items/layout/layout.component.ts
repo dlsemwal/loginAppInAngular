@@ -8,14 +8,16 @@ import { CommonService } from '../../../services/common.service';
 })
 export class LayoutComponent implements OnInit {
   products;
-  constructor(private common: CommonService) { }
-
-  ngOnInit() {
+  constructor(private common: CommonService) {
     this.common.getProducts().subscribe(res => {
       this.products = res;
       console.log(this.products);
 
     });
+  }
+
+  ngOnInit() {
+
   }
 
 }

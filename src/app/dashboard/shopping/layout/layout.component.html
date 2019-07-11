@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <app-shopping-carousel></app-shopping-carousel>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 py-5">
+      <h3>Mobile Phones</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3" *ngFor='let item of images'>
+      <a target="_blank" [href]="item">
+        <img [src]="item" alt="Mobile Phone" width="600" height="400">
+      </a>
+      <div class="desc text-center p-4">Add a description of the Mobile Phone here</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <button type="button" class="btn btn-success float-right" [routerLink]="['/dashboard', 'shopping', 'phone']">
+        View All
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 py-5">
+      <h3>Cameras</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3" *ngFor='let item of images'>
+      <a target="_blank" [href]="item">
+        <img [src]="item" alt="Mobile Phone" width="600" height="400">
+      </a>
+      <div class="desc text-center p-4">Add a description of the Camera here</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <button type="button" class="btn btn-success float-right" [routerLink]="['/dashboard', 'shopping', 'camera']">
+        View All
+      </button>
+    </div>
+  </div>
+</div>
