@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "url": "https://picsum.photos/900/500?random&t=0.256",
+        "name": "Samsung",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
+        "cost": 50
+    },
+    {
+        "id": 2,
+        "url": "https://picsum.photos/900/500?random&t=0.588",
+        "name": "Nokia",
+        "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
+        "cost": 30
+    },
+    {
+        "id": 3,
+        "url": "https://picsum.photos/900/500?random&t=0.548",
+        "name": "Iphone",
+        "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
+        "cost": 90
+    },
+    {
+        "id": 4,
+        "url": "https://picsum.photos/900/500?random&t=0.884",
+        "name": "One Plus",
+        "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
+        "cost": 60
+    },
+    {
+        "id": 5,
+        "url": "https://picsum.photos/900/500?random&t=0.788",
+        "name": "Oppo",
+        "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
+        "cost": 40
+    },
+    {
+        "id": 6,
+        "url": "https://picsum.photos/900/500?random&t=0.845",
+        "name": "Vivo",
+        "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
+        "cost": 35
+    },
+    {
+        "id": 7,
+        "url": "https://picsum.photos/900/500?random&t=0.225",
+        "name": "MI",
+        "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
+        "cost": 32
+    },
+    {
+        "id": 8,
+        "url": "https://picsum.photos/900/500?random&t=0.124",
+        "name": "HTC",
+        "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
+        "cost": 38
+    },
+    {
+        "id": 9,
+        "url": "https://picsum.photos/900/500?random&t=0.256",
+        "name": "Pixel",
+        "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
+        "cost": 43
+    },
+    {
+        "id": 10,
+        "url": "https://picsum.photos/900/500?random&t=0.257",
+        "name": "Acer",
+        "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
+        "cost": 68
+    }
+]

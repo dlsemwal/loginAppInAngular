@@ -7,13 +7,16 @@
   </div>
   <div class="row">
     <div class="col-sm-4 py-4 px-4 item" *ngFor='let item of images; let i = index'>
-      <a target="_blank" [href]="item">
-        <img [src]="item" alt="{{title}} {{i+1}}" width="600" height="400">
+      <a target="_blank"  [routerLink]="['/shopping', 'camera', item.id]">
+        <img [src]="item.url" alt="{{title}} {{i+1}}" width="600" height="400">
       </a>
       <div class="desc text-center">
-        <h3>{{title}} {{i+1}}</h3>
+        <h3>{{item.name}}</h3>
       </div>
-      <div class="desc text-center">Add a description of the {{title}} {{i+1}} here</div>
+      <div class="desc text-center">
+        <p>Add a description of the {{item.name}} {{i+1}} here</p>
+        <p class="text-primary">{{item.cost | currency}}</p>
+      </div>
     </div>
   </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from '../../../../services/common.service';
 
 @Component({
   selector: 'app-shopping-carousel',
@@ -6,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carousel.component.css']
 })
 export class CarouselComponent implements OnInit {
-  images = [1, 2, 3].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
-  constructor() { }
-
+  images;
+  constructor(common: CommonService) {
+    common.getShoppingProd().subscribe(res => {
+      this.images = res;
+      this.images = this.images.slice(5, 8);
+      console.log(res, this.images);
+    });
+  }
   ngOnInit() {
   }
 

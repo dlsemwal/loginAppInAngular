@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { images } from '../../../config/config';
+import { CommonService } from '../../../services/common.service';
 
 @Component({
   selector: 'app-phone',
@@ -8,10 +9,12 @@ import { images } from '../../../config/config';
 })
 export class PhoneComponent implements OnInit {
   title = 'Mobile Phone';
-  images = images;
-  constructor() {
-
-  }
+  images;
+  constructor(common: CommonService) {
+    common.getShoppingProd().subscribe(res => {
+      this.images = res;
+    });
+   }
 
   ngOnInit() {
   }

@@ -47,4 +47,7 @@ export class CommonService implements HttpInterceptor {
       return false;
     }
   }
+  getShoppingProd() {
+    return this.http.get('assets/products.json');
+  }
 }

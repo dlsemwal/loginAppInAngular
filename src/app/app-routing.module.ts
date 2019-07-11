@@ -6,6 +6,7 @@ import { LoginGuard } from './guards/login-guard.service';
 const routes: Routes = [
   { path: 'login', canActivate: [LoginGuard], component: LoginComponent },
   { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
+  { path: 'shopping', loadChildren: './dashboard/shopping/shopping.module#ShoppingModule' },
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: '**', redirectTo: 'dashboard', pathMatch: 'full' }
 

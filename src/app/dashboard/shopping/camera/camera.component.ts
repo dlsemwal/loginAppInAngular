@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { images } from '../../../config/config';
+import { CommonService } from '../../../services/common.service';
 
 @Component({
   selector: 'app-camera',
@@ -8,10 +8,12 @@ import { images } from '../../../config/config';
 })
 export class CameraComponent implements OnInit {
   title = 'Camera';
-  images = images;
-  constructor() {
-
-  }
+  images;
+  constructor(common: CommonService) {
+    common.getShoppingProd().subscribe(res => {
+      this.images = res;
+    });
+   }
 
   ngOnInit() {
   }

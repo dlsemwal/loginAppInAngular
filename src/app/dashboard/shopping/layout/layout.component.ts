@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from '../../../services/common.service';
 
 @Component({
   selector: 'app-layout',
@@ -6,8 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./layout.component.css']
 })
 export class LayoutComponent implements OnInit {
-  images = [1, 2, 3, 4].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
-  constructor() { }
+  images;
+  constructor(common: CommonService) {
+    common.getShoppingProd().subscribe(res => {
+      this.images = res;
+      this.images = this.images.slice(0, 4);
+      console.log(res, this.images);
+    });
+   }
 
   ngOnInit() {
 
