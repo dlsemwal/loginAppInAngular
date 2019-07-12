@@ -7,6 +7,15 @@ import { LStorageService } from './services/l-storage.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  isShoppingModule() {
+    const url = window.location.href;
+    if (url.indexOf('/shopping') > 0) {
+      return true;
+    } else {
+      return false;
+    }
+
+  }
   constructor(private lStorage: LStorageService) {
 
   }

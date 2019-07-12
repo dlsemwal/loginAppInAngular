@@ -7,7 +7,7 @@
   </div>
   <div class="row">
     <div class="col-sm-4 py-4 px-4 item" *ngFor='let item of images; let i = index'>
-      <a target="_blank"  [routerLink]="['/shopping', 'camera', item.id]">
+      <a target="_blank" [routerLink]="['/shopping', 'camera', item.id]">
         <img [src]="item.url" alt="{{title}} {{i+1}}" width="600" height="400">
       </a>
       <div class="desc text-center">
@@ -16,6 +16,19 @@
       <div class="desc text-center">
         <p>Add a description of the {{item.name}} {{i+1}} here</p>
         <p class="text-primary">{{item.cost | currency}}</p>
+        <div class="btn-group btn-group-toggle">
+          <label class="btn-primary" ngbButtonLabel>
+            <input type="checkbox" ngbButton [(ngModel)]="item.addCart" 
+             value="false" (click)='item.quantity = item.addCart ? 0 : 1' /> {{item.addCart ? 'Remove from Cart' : 'Add into Cart'}}
+          </label>
+        </div>
+        <div *ngIf = 'item.addCart'>
+          <div class="btn-group" role="group" aria-label="Basic example" class="float-left">
+            <button type="button" (click)='item.quantity = item.quantity > 0 ? item.quantity - 1 : 1' class="btn btn-secondary">-</button>
+            <button type="button" (click)='item.quantity = item.quantity > 0 ? item.quantity + 1 : 1' class="btn btn-secondary">+</button>
+          </div>
+          <div class="float-right">Qty: {{item.quantity}}</div>
+        </div>
       </div>
     </div>
   </div>
