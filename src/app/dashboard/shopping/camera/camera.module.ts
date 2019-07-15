@@ -5,9 +5,10 @@ import { CameraRoutingModule } from './camera-routing.module';
 import { CameraComponent } from './camera.component';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
-  declarations: [CameraComponent],
+  declarations: [CameraComponent, DetailsComponent],
   imports: [
     CommonModule,
     CameraRoutingModule,
