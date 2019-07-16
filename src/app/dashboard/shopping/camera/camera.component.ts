@@ -18,20 +18,20 @@ export class CameraComponent implements OnInit {
 
   ngOnInit() {
   }
-  addCart(item, event) {
-    console.log(item);
-    if (item.isAddedToCart) {
-      this.cart.addCart(item);
-    } else {
-      this.cart.removeFromCart(item);
-    }
-
-  }
-  updateQuantity(item) {
-    console.log(item);
-
-    this.cart.removeFromCart(item);
+  addCart(item) {
+    item.quantity = 1;
     this.cart.addCart(item);
+  }
+  updateQuantity(item, addQuantity) {
+    if (addQuantity) {
+      this.cart.cart[this.cart.getIndexFromCart(item)].quantity++;
+    } else {
+      if (this.cart.cart[this.cart.getIndexFromCart(item)].quantity < 2) {
+        this.cart.removeFromCart(item);
+      } else {
+        this.cart.cart[this.cart.getIndexFromCart(item)].quantity--;
+      }
+    }
   }
 
 }
