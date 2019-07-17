@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LStorageService } from './services/l-storage.service';
+import { CartService } from './services/cart.service';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,7 @@ export class AppComponent {
     }
 
   }
-  constructor(private lStorage: LStorageService) {
+  constructor(private lStorage: LStorageService, private cart: CartService) {
 
   }
 

@@ -1,72 +1,72 @@
 [
     {
         "id": 1,
-        "url": "https://picsum.photos/900/500?random&t=0.256",
+        "url": "https://cdn.webshopapp.com/shops/276845/files/273909019/samsung-galaxy-a70-skin.jpg",
         "name": "Samsung",
         "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
-        "cost": 50
+        "cost": 50000
     },
     {
         "id": 2,
-        "url": "https://picsum.photos/900/500?random&t=0.588",
+        "url": "https://images.ctfassets.net/wcfotm6rrl7u/5ks6XVKtcAWGC66iAcmuYO/d2045c7f84909db5c0cb162b917fffe4/nokia_7_1-Recommended.png?fm=jpg&fl=progressive&q=80",
         "name": "Nokia",
         "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
-        "cost": 30
+        "cost": 30000
     },
     {
         "id": 3,
-        "url": "https://picsum.photos/900/500?random&t=0.548",
+        "url": "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/iPhone-Curve-796x417.jpg",
         "name": "Iphone",
         "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
-        "cost": 90
+        "cost": 90000
     },
     {
         "id": 4,
-        "url": "https://picsum.photos/900/500?random&t=0.884",
+        "url": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201904/oneplus_7_7_pro.jpeg?JK1JSK5GvebhFYV.mClNRxgAszPBc0T3",
         "name": "One Plus",
         "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
-        "cost": 60
+        "cost": 60000
     },
     {
         "id": 5,
-        "url": "https://picsum.photos/900/500?random&t=0.788",
+        "url": "https://s1.poorvikamobile.com/image/data/product_description/oppo-f9pro/f9_p5.jpg",
         "name": "Oppo",
         "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
-        "cost": 40
+        "cost": 40000
     },
     {
         "id": 6,
-        "url": "https://picsum.photos/900/500?random&t=0.845",
+        "url": "https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1557300134000/6191341698fb8d32f06693fe5fad4f69.png",
         "name": "Vivo",
         "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
-        "cost": 35
+        "cost": 35000
     },
     {
         "id": 7,
-        "url": "https://picsum.photos/900/500?random&t=0.225",
+        "url": "https://download.appmifile.com/933_updatepdf_in/28/02/2019/8b118dd0-dd89-4b5d-9edc-032157e3dcd9.png",
         "name": "MI",
         "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
-        "cost": 32
+        "cost": 32000
     },
     {
         "id": 8,
-        "url": "https://picsum.photos/900/500?random&t=0.124",
+        "url": "https://smedia2.intoday.in/btmt/images/stories/htc-desire-12_660_061118053019.jpg",
         "name": "HTC",
         "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
-        "cost": 38
+        "cost": 38000
     },
     {
         "id": 9,
-        "url": "https://picsum.photos/900/500?random&t=0.256",
+        "url": "https://media.wired.com/photos/5bc1105da2e356302119fc62/master/w_2400,c_limit/pixel-alt.jpg",
         "name": "Pixel",
         "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
-        "cost": 43
+        "cost": 43000
     },
     {
         "id": 10,
-        "url": "https://picsum.photos/900/500?random&t=0.257",
+        "url": "https://zdnet4.cbsistatic.com/hub/i/2015/08/28/452c0cab-de89-45c3-8f21-01960097eebf/5e9f86b118aa6d927217e29330dcb1d6/72a8e34d47880839301bd6daa02db47aacer-two-phone-jpg-resized800.jpg",
         "name": "Acer",
         "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque odit repellat est reiciendis hic, deserunt, aperiamimpedit architecto voluptate reprehenderit sint aspernatur excepturi officia suscipit et? Unde, veritatis velit!Cumque.",
-        "cost": 68
+        "cost": 68000
     }
 ]

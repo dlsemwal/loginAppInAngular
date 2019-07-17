@@ -18,18 +18,6 @@ export class PhoneComponent implements OnInit {
 
   ngOnInit() {
   }
-  addCart(item, event) {
-    if (item.isAddedToCart) {
-      this.cart.addCart(item);
-    } else {
-      this.cart.removeFromCart(item);
-    }
 
-  }
-  updateQuantity(item) {
-
-    this.cart.removeFromCart(item);
-    this.cart.addCart(item);
-  }
 
 }

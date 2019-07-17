@@ -38,6 +38,7 @@ export class PicturesComponent implements OnInit {
       this.page = this.img.slice((config.perPageData + 2) * (i - 1), i * (config.perPageData + 2));
       this.currentPage = +i;
       this.route.params.subscribe(page => {
+        // tslint:disable-next-line:triple-equals
         if (page != i) {
           this.router.navigate([`/dashboard/pictures/${i}`]);
         }

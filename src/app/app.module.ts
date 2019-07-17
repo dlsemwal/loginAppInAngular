@@ -10,6 +10,8 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { AuthService } from './services/auth.service';
 import { HeaderComponent } from './header/header.component';
+import { CartService } from './services/cart.service';
+
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { HeaderComponent } from './header/header.component';
     AuthService, [
       { provide: HTTP_INTERCEPTORS, useClass: CommonService, multi: true }
     ],
+    CartService,
+
   ],
   bootstrap: [AppComponent]
 })

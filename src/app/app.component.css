@@ -2,3 +2,6 @@
   background-color: rgb(9, 9, 48);
   color: #f7631b;
 }
+h1, p, i {
+  vertical-align: middle;
+}
